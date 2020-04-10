@@ -2,18 +2,15 @@
   "private": true,
   "version": "5.1.2",
   "scripts": {
-    "standard-version-release": "standard-version",
-    "release": "sh ./release.sh",
-    "patch": "sh ./patch-release.sh"
+    "release": "standard-version",
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.1.0",
     "standard-version": "^7.1.0"
   },
   "dependencies": {},
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+  "standard-version": {
+    "skip": {
+        "tag": true
     }
   }
 }

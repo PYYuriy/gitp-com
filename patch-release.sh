@@ -2,10 +2,10 @@
 
 git fetch
 
-patching()
-{
-  git checkout $1
-  echo  Patching...
+#patching()
+#{
+#  git checkout $1
+#  echo  Patching...
 
   # similar as for release.sh
   VERSION=$(node -p "require('./package.json').version")
@@ -26,11 +26,11 @@ patching()
 
   # push patch branch to git repo with tag
   git push --set-upstream origin $BRANCH --follow-tags
-}
+#}
 
 #Create patch per each branch announced in `patch-config.json`
-for i in $(jq '.releases | .[]'  ./patch-config.json); do
-  BRANCH=$(echo $i | xargs)
-  patching $BRANCH
-done
+#for i in $(jq '.releases | .[]'  ./patch-config.json); do
+#  BRANCH=$(echo $i | xargs)
+#  patching $BRANCH
+#done
 
