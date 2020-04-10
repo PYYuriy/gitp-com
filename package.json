@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "version": "5.1.2",
+  "scripts": {
+    "standard-version-release": "standard-version",
+    "release": "sh ./release.sh",
+    "patch": "sh ./patch-release.sh"
+  },
+  "devDependencies": {
+    "standard-version": "^7.1.0"
+  },
+  "dependencies": {
+  }
+}
