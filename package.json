@@ -5,9 +5,12 @@
     "release": "standard-version",
   },
   "devDependencies": {
-    "standard-version": "^7.1.0"
+    "conventional-recommended-bump": "^1.0.1",
+    "nodegit": "^0.20.1",
+    "nodegit-flow": "^0.4.2",
+    "semver": "^5.4.1",
+    "standard-version": "^4.2.0"
   },
-  "dependencies": {},
   "standard-version": {
     "skip": {
         "tag": true
