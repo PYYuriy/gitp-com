@@ -7,8 +7,13 @@
     "patch": "sh ./patch-release.sh"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.1.0",
     "standard-version": "^7.1.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
